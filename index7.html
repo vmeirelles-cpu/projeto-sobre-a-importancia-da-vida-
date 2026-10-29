@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Importância da Vida</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38ef7d;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #11998e;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #11998e;
+            margin-bottom: 10px;
+        }
+
+        /* ATIVIDADES */
+
+        .atividade {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #38ef7d;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .atividade h3 {
+            color: #11998e;
+            margin-bottom: 10px;
+        }
+
+        /* MENSAGEM FINAL */
+
+        .projeto {
+            background: linear-gradient(135deg, #222, #444);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #11998e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #38a169;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+        <h1>💚 A Importância da Vida</h1>
+        <p>Valorizar cada momento é aprender a viver.</p>
+        <p>Respeito, amor, esperança e solidariedade.</p>
+    </header>
+
+    <!-- MENU -->
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#importancia">Importância da Vida</a>
+        <a href="#valores">Valores</a>
+        <a href="#atitudes">Boas Atitudes</a>
+        <a href="#mensagem">Mensagem</a>
+    </nav>
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+        <div class="inicio">
+
+            <img
+                src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8"
+                alt="Nascer do sol representando esperança e novos começos"
+            >
+
+            <div class="inicio-texto">
+                <h2>🌎 Cada Vida Tem Valor</h2>
+
+                <p>
+                    A vida de uma pessoa é um dos bens mais
+                    preciosos que existem. Cada ser humano tem
+                    sentimentos, sonhos, histórias e objetivos.
+                </p>
+
+                <br>
+
+                <p>
+                    Viver é ter a oportunidade de aprender,
+                    conhecer pessoas, superar dificuldades
+                    e construir um futuro melhor.
+                </p>
+
+                <br>
+
+                <p>
+                    ❤️ Toda pessoa merece respeito, carinho,
+                    dignidade e a oportunidade de ser feliz.
+                </p>
+
+                <br>
+
+                <p>
+                    Valorizar a vida significa cuidar de nós
+                    mesmos, ajudar o próximo e reconhecer
+                    que nossas atitudes podem fazer a diferença.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMPORTÂNCIA DA VIDA -->
+
+    <section id="importancia">
+        <h2>🌱 Por Que a Vida é Importante?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300"
+                    alt="Família reunida"
+                >
+                <h3>👨‍👩‍👧 Amor e Família</h3>
+                <p>
+                    O amor e o apoio das pessoas próximas ajudam
+                    a enfrentar desafios e tornam os momentos
+                    especiais ainda mais significativos.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac"
+                    alt="Amigos compartilhando momentos"
+                >
+                <h3>🤝 Amizade</h3>
+                <p>
+                    A amizade nos ensina sobre confiança,
+                    companheirismo, respeito e a importância
+                    de estarmos presentes na vida uns dos outros.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b"
+                    alt="Pessoa estudando"
+                >
+                <h3>📚 Aprendizado</h3>
+                <p>
+                    Aprender nos ajuda a crescer, desenvolver
+                    habilidades, realizar sonhos e descobrir
+                    novas possibilidades para o futuro.
+                </p>
+            </div>
+
+            <div class="card">
+                <img
+                    src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
+                    alt="Paisagem natural com montanhas"
+                >
+                <h3>🌿 Esperança</h3>
+                <p>
+                    Mesmo diante das dificuldades, sempre
+                    podemos buscar apoio, aprender com as
+                    experiências e encontrar novos caminhos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VALORES -->
+
+    <section id="valores">
+        <h2>💖 Valores Que Dão Sentido à Vida</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>❤️ Amor</h3>
+                <p>
+                    Demonstrar carinho, cuidar das pessoas
+                    e cultivar relacionamentos saudáveis.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🙏 Respeito</h3>
+                <p>
+                    Reconhecer que cada pessoa é única
+                    e merece ser tratada com dignidade.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌻 Gratidão</h3>
+                <p>
+                    Reconhecer as coisas boas da vida
+                    e valorizar os pequenos momentos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤲 Solidariedade</h3>
+                <p>
+                    Ajudar quem precisa, ouvir sem julgar
+                    e contribuir para um mundo melhor.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💪 Coragem</h3>
+                <p>
+                    Enfrentar desafios, pedir ajuda quando
+                    necessário e continuar buscando soluções.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>✨ Esperança</h3>
+                <p>
+                    Acreditar na possibilidade de mudanças
+                    positivas e na construção de novos sonhos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BOAS ATITUDES -->
+
+    <section id="atitudes">
+        <h2>🌍 Como Podemos Valorizar a Vida?</h2>
+
+        <div class="atividade">
+            <h3>1. Escutar as pessoas</h3>
+            <p>
+                Dar atenção a alguém que precisa conversar
+                pode demonstrar cuidado e fazer essa pessoa
+                se sentir acolhida.
+            </p>
+        </div>
+
+        <div class="atividade">
+            <h3>2. Respeitar as diferenças</h3>
+            <p>
+                Cada pessoa tem sua história, suas opiniões
+                e seus sentimentos. O respeito é essencial
+                para uma convivência saudável.
+            </p>
+        </div>
+
+        <div class="atividade">
+            <h3>3. Cuidar da saúde física e emocional</h3>
+            <p>
+                Dormir bem, alimentar-se adequadamente,
+                praticar atividades físicas e procurar apoio
+                quando necessário são formas de cuidar da vida.
+            </p>
+        </div>
+
+        <div class="atividade">
+            <h3>4. Praticar a gentileza</h3>
+            <p>
+                Um elogio sincero, uma palavra de incentivo
+                ou uma pequena ajuda podem tornar o dia
+                de alguém melhor.
+            </p>
+        </div>
+
+        <div class="atividade">
+            <h3>5. Valorizar o presente</h3>
+            <p>
+                Aproveitar os momentos com pessoas queridas,
+                aprender coisas novas e reconhecer pequenas
+                conquistas nos ajuda a valorizar a vida.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- MENSAGEM FINAL -->
+
+    <section id="mensagem">
+        <div class="projeto">
+
+            <h2>✨ Sua Vida Tem Valor!</h2>
+
+            <p>
+                A vida não precisa ser perfeita para ser importante.
+                Todos enfrentamos dificuldades, cometemos erros
+                e passamos por momentos difíceis.
+            </p>
+
+            <br>
+
+            <p>
+                O que importa é reconhecer nosso valor,
+                aprender com as experiências e lembrar que
+                ninguém precisa enfrentar tudo sozinho.
+            </p>
+
+            <br>
+
+            <p>
+                💚 Cuide de si mesmo.
+                <br>
+                🤝 Respeite e ajude o próximo.
+                <br>
+                🌻 Valorize os pequenos momentos.
+                <br>
+                ❤️ Espalhe amor e esperança.
+            </p>
+
+            <br>
+
+            <p>
+                "A vida de cada pessoa tem valor,
+                e um pequeno gesto de bondade pode
+                fazer uma grande diferença."
+            </p>
+
+            <a href="#inicio" class="botao">
+                Voltar ao início
+            </a>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <p>💚 A Importância da Vida</p>
+        <p>Respeitar, cuidar e valorizar cada pessoa.</p>
+        <br>
+        <p>© 2026 - Projeto Educacional</p>
+    </footer>
+
+</body>
+</html>
